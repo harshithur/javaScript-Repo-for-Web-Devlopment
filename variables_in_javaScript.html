@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >var a = 5;
+        var b = 5;
+        var c = "Harry";
+        console.log(a+b+8);
+        console.log(c);
+        
+        // Rules for declaring variable in javaScript.......
+        /* 1.It should not start with Number
+           2.Letters,digit,underscore ar $ Sing are allowed
+           3.must start with _ ,$ are or letter
+           4.javaScript Reserved Words Con't be used..
+           5.variables in javaScript are case sensitive(that means there is deffrece between "A" and "a")*/
+        
+        //  Var and let key words in javaScript ....
+        
+        //  Var is "GLOBALY SCOPED" while let and Const are "BLOCK LEVEL SCOPED" in js
+         
+        //Var Can be updated and redeclared with its Scope 
+         var _v = 66;
+         {
+            var _v = 5;
+            console.log(_v);   // Out put = 5
+         }
+            console.log(_v);   // Out put = 5
+        
+        //let can updated but not redeclared...(BLOCK LEVEL SCOPED)
+        let _a = 66;
+        {
+            let _a = 5;
+            console.log(_a);  // Out put = 5
+        }
+        console.log(_a);     // Out put = 66 
+        //cant nither uptaed and nor it can be redeclared.....
+        //Example :- 
+                    const _c = 10;
+                  //  const _c = 10 + 1;  not allowed...!
+        
+        
+        
+        
+                  //  :--- DATA TYPES IN JAVASCRIPT---:   //
+        
+        // 2 - Types 1.Primitive Data types and 2.Obejcts Data types......
+        
+        // 1.Primitive data types are 7-types
+        
+        //a. null
+           let n = null;
+        //b. number 
+           let _n = 234;
+        //c. String 
+           let s = "Hello World!"
+        // d. Symbol
+           let _s = Symbol();
+        //e. Undefind
+           let u = undefined;
+        //f. Boolean 
+           let _b = true;
+        // g. Big-int 
+           let __b = 865954332;
+        
+           console.log(n,_n,s,_s,u,_b,__b);
+           console.log(typeof n,typeof _n,typeof s,typeof _s,typeof u,typeof _b,typeof __b);
+        
+        
+           // Obeject in javaScript is key and value combination.....to rigth about any entity 
+         
+            let o = {
+                  name : "Harshith",
+               "job role" : "Programer" //if space write inside the double quotes....
+            }
+            console.log(o);
+            console.log(typeof o);
+        //if  we want to update these then => o.slary 
+        
+           o.salry = "6-lpa";
+           console.log(o);
+        
+        </script>
+</body>
+</html>

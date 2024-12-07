@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in javaScript</title>
+</head>
+<body>
+    <script>
+        //LOOPs in javaScript...
+// 1.for loop
+for (let i = 1; i <= 100; i++){
+    console.log(i);
+}
+// 2.for-in-loop it gives keys and element in the object....
+let obj = {
+    name   : "harshith",
+    role   : "Programer",
+    salary :  55000
+}
+for (const key in obj) {
+    const element = obj[key];
+    console.log(key,element);
+}
+
+// 3.for-of-loop gives each string charter or iused in array....
+
+for (let c of "object") {
+    console.log(c);
+}
+
+
+// 4.while-loop
+
+let w = 1;
+while(w<=10){
+    console.log(w);
+    w++;
+}
+
+
+// 5.do-while-loop
+
+let d = 1;
+do {
+    console.log(d);
+    d++;
+} while(d<=20);
+    </script>
+</body>
+</html>
